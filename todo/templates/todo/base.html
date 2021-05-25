@@ -1,0 +1,16 @@
+
+{% if user.is_authenticated %}
+Авторизовано як {{ user.username }}
+<a href="#">Вихід</a>
+
+{% else %}
+
+<a href="#">Авторизуватися/a>
+<a href="#">Ввійти</a>
+
+{% endif %}
+<br>
+<br>
+
+
+{% block content  %} {% endblock %}
