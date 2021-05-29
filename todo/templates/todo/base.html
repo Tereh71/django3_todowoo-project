@@ -1,12 +1,18 @@
 
 {% if user.is_authenticated %}
 Авторизовано як {{ user.username }}
-<a href="#">Вихід</a>
+
+<form action="{% url 'logoutuser' %}" method="POST">
+{% csrf_token %}
+<br>
+<button type="submit">Вийти</button>
+</form>
+
 
 {% else %}
 
-<a href="#">Авторизуватися/a>
-<a href="#">Ввійти</a>
+<a href="{% url 'signupuser' %}">Зареєструватися</a>
+<a href="{% url 'loginuser' %}">Ввійти</a>
 
 {% endif %}
 <br>
