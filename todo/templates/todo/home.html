@@ -1,5 +1,19 @@
-{% extends 'todo/base.html' %}
+{% extends "todo/base.html" %}
 
 {% block content %}
-Домашня сторінка
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="row justify-content-center mt-5">
+        <div class="col-md-7 text-center">
+
+                 <h1>Просто ваші справи. Вперед!</h1>
+            <p>Життя - це весело. Але життя теж зайняте. Ви можете робити мільйон різних речей. Але важливо <u> те, що </u> ви робите. Ми створили <b> <i> Todo Woo </i> </b>, щоб допомогти вам осмислити всі свої можливості та жити тим життям, яке для вас найважливіше. Вас чекає нове організоване життя.</p>
+        <a role="button" class="btn btn-primary btn-lg" href="{% url 'signupuser' %}">Старт</a>
+        </div>
+    </div>
+
 {% endblock %}
